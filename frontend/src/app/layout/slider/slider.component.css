@@ -1,0 +1,33 @@
+.uk-slideshow-items {
+
+    max-height:400px !important;
+    height: 400px !important;
+    align-items: center;
+    
+    }
+    
+    
+    @media (max-width: 768px) {
+      .slideshow {
+        width: 100%;
+      }
+    }
+    
+    .slideshow {
+      display: block;
+      flex-wrap: wrap;
+      object-fit: fill;
+      height: 100px;
+    }
+    
+    @media (max-width: 768px) {
+      .slideshow .prev,
+      .slideshow .next {
+        display: none;
+      }
+    }
+
+    .uk-slideshow-items {
+      position: relative;  /* Ensures relative positioning */
+      z-index: 100;        /* A high value to make sure the slideshow is on top */
+  }
