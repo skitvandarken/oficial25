@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { Slider2Component } from '../slider2/slider2.component';
 
 @Component({
   selector: 'app-audiovisual',
   standalone: true,
-  imports: [],
+  imports: [
+    Slider2Component
+  ],
   templateUrl: './audiovisual.component.html',
   styleUrl: './audiovisual.component.css'
 })

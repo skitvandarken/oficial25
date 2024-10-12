@@ -6,6 +6,8 @@ import { CardsComponent } from '../../layout/cards/cards.component';
 import { VerificadorComponent } from '../../layout/verificador/verificador.component';
 import { Video1Component } from '../../layout/video1/video1.component';
 import { AudiovisualComponent } from '../../layout/audiovisual/audiovisual.component';
+import { FooterComponent } from '../../layout/footer/footer.component';
+import { Cards2Component } from '../../layout/cards2/cards2.component';
 
 @Component({
   selector: 'app-inicio',
@@ -15,9 +17,11 @@ import { AudiovisualComponent } from '../../layout/audiovisual/audiovisual.compo
     NavbarComponent,
     SliderComponent,
     CardsComponent,
+    Cards2Component,
     VerificadorComponent,
     Video1Component,
-    AudiovisualComponent
+    AudiovisualComponent,
+    FooterComponent
 ],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'

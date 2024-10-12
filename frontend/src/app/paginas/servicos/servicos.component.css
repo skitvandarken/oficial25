@@ -3,31 +3,7 @@
     border-image: linear-gradient(to right, red, darkred) 1;
     position: relative;
     overflow: hidden; /* Ensures the shine effect is confined to the border */
-    border-radius: 10px; /* Adjust this value to change the roundness of the corners */
-    
 }
-
-.click{
-
-        font-weight: 400 !important;
-        color: #000 !important;
-        
-    
-}
-
-.click:hover {
-
-    font-weight: 500 !important;
-    color: #444444 !important;
-    transition: 0.5;
-
-}
-
-.texto-1{
-    color: #ff0000 !important;
-}
-/* Add this to your component's CSS file */
-
 
 .card::before {
     content: '';

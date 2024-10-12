@@ -1,0 +1,40 @@
+/* Container for the slider with fading edges */
+.slider-container {
+    width: 100%;
+    overflow: hidden; /* Hides the overflowing content */
+    position: relative;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0)); /* Fading effect at edges */
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0)); /* Safari support */
+  }
+  
+  /* Slider holding the images */
+  .slider {
+    display: flex;
+    width: 100%; /* Set to 100% to enable smooth scrolling */
+    overflow: hidden; /* Ensure it hides overflow */
+  }
+  
+  .slider-inner {
+    display: flex;
+    animation: infinite-scroll 20s linear infinite; /* Infinite scroll */
+  }
+  
+  /* Adjust image size */
+  .slider img {
+    width: 200px; /* Adjust based on your image size */
+    height: auto;
+  }
+  
+  /* Keyframes for infinite, seamless scrolling */
+  @keyframes infinite-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* Translate the entire width of the inner container */
+    }
+  }
+  
+  .shadow-top {
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Creates a shadow at the top */
+}

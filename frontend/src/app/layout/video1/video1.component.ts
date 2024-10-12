@@ -12,7 +12,7 @@ export class Video1Component {
   videoURL:string
 
   constructor() {
-    this.videoURL = 'videos/devcamp_promo.mp4';
+    this.videoURL = 'videos/devcamp_promo-vid.mp4';
 
   }
 
