@@ -20,3 +20,13 @@
     color: white !important;
   
   }
+
+  .botao{
+    cursor: pointer;
+  }
+
+  .texto-rosa{
+
+    color:#f0506e;
+
+  }
