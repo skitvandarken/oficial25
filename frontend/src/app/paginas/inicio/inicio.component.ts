@@ -8,6 +8,7 @@ import { Video1Component } from '../../layout/video1/video1.component';
 import { AudiovisualComponent } from '../../layout/audiovisual/audiovisual.component';
 import { FooterComponent } from '../../layout/footer/footer.component';
 import { Cards2Component } from '../../layout/cards2/cards2.component';
+import { BannerComponent } from '../../layout/banner/banner.component';
 
 @Component({
   selector: 'app-inicio',
@@ -21,7 +22,8 @@ import { Cards2Component } from '../../layout/cards2/cards2.component';
     VerificadorComponent,
     Video1Component,
     AudiovisualComponent,
-    FooterComponent
+    FooterComponent,
+    BannerComponent
 ],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'

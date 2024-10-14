@@ -35,6 +35,3 @@
     }
   }
   
-  .shadow-top {
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Creates a shadow at the top */
-}
