@@ -1,20 +1,32 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-video1',
   standalone: true,
   imports: [],
   templateUrl: './video1.component.html',
-  styleUrl: './video1.component.css'
+  styleUrls: ['./video1.component.css']
 })
-export class Video1Component {
+export class Video1Component implements OnInit {
 
-  videoURL:string
-
-  constructor() {
-    this.videoURL = 'videos/devcamp_promo-vid.mp4';
-
+  ngOnInit(): void {
+    this.setPlaysInlineForVideo();
   }
 
+  setPlaysInlineForVideo(): void {
+    const video = document.getElementById('promoVideo') as HTMLVideoElement;
 
-}
+    if (video) {
+      // Force inline play on supported mobile devices
+      video.setAttribute('playsinline', 'true');
+      video.setAttribute('webkit-playsinline', 'true');
+
+      // Handle iOS fullscreen video issue
+      video.addEventListener('loadedmetadata', () => {
+        if (video.paused) {
+          video.play().catch((error) => console.error('Autoplay failed:', error));
+        }
+      });
+    }
+  }
+   }

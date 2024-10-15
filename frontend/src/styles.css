@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 h1, h2, h3, p, a, li, ul, nav, body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif !important;
 }
 
 
@@ -23,7 +23,9 @@ h1, h2, h3, p, a, li, ul, nav, body {
   }
 
   .whatsapp-button :hover{
-    background-color: #1a9347;
+    background-color: #1a9347 !important;
+    color: white !important;
+
 
   }
   

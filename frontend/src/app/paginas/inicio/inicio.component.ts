@@ -23,7 +23,8 @@ import { BannerComponent } from '../../layout/banner/banner.component';
     Video1Component,
     AudiovisualComponent,
     FooterComponent,
-    BannerComponent
+    BannerComponent,
+    
 ],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
