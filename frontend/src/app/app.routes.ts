@@ -5,6 +5,7 @@ import { HistoriaComponent } from './paginas/historia/historia.component';
 
 export const routes: Routes = [
     {path:'', component: InicioComponent},
+    {path:'inicio', component: InicioComponent},
     {path:'servicos', component: ServicosComponent},
     {path:'historia', component: HistoriaComponent}
     
